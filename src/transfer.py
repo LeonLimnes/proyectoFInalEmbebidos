@@ -2,6 +2,7 @@ from time import sleep
 import os
 import re
 from copyRoms import copyFiles
+from listRoms import guiListRoms
 sleep(3)
 devices = os.popen('sudo blkid').readlines()
 usbs = []
@@ -24,4 +25,8 @@ for u in usbs:
         os.system(unmount_command)
     except Exception as e:
         print(e)
-
+lock_path="/tmp/lockUSB.lock"
+if(not os.path.isfile(lock_path)):
+     open(lock_path,"x")
+     guiListRoms()
+     os.remove(lock_path)
