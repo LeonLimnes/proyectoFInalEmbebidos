@@ -62,7 +62,7 @@ def guiListRoms():
         row=0,
         sticky='ns')
     
-    root.after(3000,lambda:root.destroy())
+    #root.after(3000,lambda:root.destroy())
     root.lift()
     root.attributes('-topmost',True)
     root.mainloop()

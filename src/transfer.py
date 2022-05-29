@@ -25,8 +25,11 @@ for u in usbs:
         os.system(unmount_command)
     except Exception as e:
         print(e)
-lock_path="/tmp/lockUSB.lock"
-if(not os.path.isfile(lock_path)):
-     open(lock_path,"x")
-     guiListRoms()
-     os.remove(lock_path)
+    finally:
+        lock_path="/tmp/lockUSB.lock"
+        if(not os.path.isfile(lock_path)):
+            open(lock_path,"x")
+            try:   
+                guiListRoms()
+            finally:
+                os.remove(lock_path)
