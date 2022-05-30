@@ -3,6 +3,9 @@ import os
 import re
 from copyRoms import copyFiles
 from listRoms import guiListRoms
+from stop_continue_process import get_id
+from stop_continue_process import kill_mednafen
+from stop_continue_process import continue_mednafen
 sleep(3)
 devices = os.popen('sudo blkid').readlines()
 usbs = []
@@ -29,7 +32,10 @@ for u in usbs:
         lock_path="/tmp/lockUSB.lock"
         if(not os.path.isfile(lock_path)):
             open(lock_path,"x")
-            try:   
+            try:
+                get_id()
+                kill_mednafen()
                 guiListRoms()
+                continue_mednafen()
             finally:
                 os.remove(lock_path)
