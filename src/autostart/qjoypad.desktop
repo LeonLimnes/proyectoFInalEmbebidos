@@ -1,0 +1,5 @@
+
+[Desktop Entry]
+Name=qjoypad
+Exec=lxterminal -e "qjoypad 'Rasp'"
+Type=Application

@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=mednaffe
+Exec=lxterminal -e "mednaffe"
+Type=Application

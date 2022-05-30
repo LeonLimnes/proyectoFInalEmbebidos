@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=disable_desktop
+Exec=lxterminal -e "/usr/bin/python3 /home/pi/Desktop/proyectoFInalEmbebidos/src/disable_desktop.py"
+Type=Application

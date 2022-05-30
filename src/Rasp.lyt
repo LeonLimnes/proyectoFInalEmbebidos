@@ -1,0 +1,10 @@
+# QJoyPad 4.1 Layout File
+
+Joystick 1 {
+	Axis 1: gradient, maxSpeed 5, tCurve 4, mouse+h
+	Axis 2: gradient, maxSpeed 5, tCurve 4, mouse+v
+	Axis 8: +key 37, -key 0
+	Button 1: mouse 1
+	Button 2: mouse 3
+}
+

@@ -21,6 +21,8 @@ fi
 
 #Run video on boot
 omxplayer {}
+su -pi -c mednaffe &
+su -pi -c qjoypad "rasp" &
 exit 0
 """.format(fileDir)
     with open("/etc/rc.local", "w+") as file_rcLocal:
