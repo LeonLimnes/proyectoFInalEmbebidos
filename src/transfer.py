@@ -5,7 +5,7 @@
 #
 # Autor: César Augusto Martínez Franco
 #        Lisset Noriega Domínguez
-#
+#       Quiroz hernandez Rodolfo
 #       Jesús Arturo Vázquez Zaragoza
 # License: MIT
 #
