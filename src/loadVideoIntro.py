@@ -21,8 +21,6 @@ fi
 
 #Run video on boot
 omxplayer {}
-su -pi -c mednaffe &
-su -pi -c qjoypad "rasp" &
 exit 0
 """.format(fileDir)
     with open("/etc/rc.local", "w+") as file_rcLocal:
@@ -109,5 +107,5 @@ def loadVideo(fileDir):
     bootConfig()
     cdmlineConfig()
     
-loadVideo("/home/pi/Desktop/proyectoFInalEmbebidos/VIdeoIntro/logo.mp4")
+loadVideo("../VIdeoIntro/logo.mp4")
     

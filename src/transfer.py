@@ -24,7 +24,7 @@ for u in usbs:
     unmount_command = "sudo unmount {}".format(path)
     try:
         os.system(mount_command)
-        copyFiles(path,"/home/pi/Desktop/proyectoFInalEmbebidos/ROMS/GBC")
+        copyFiles(path,"../ROMS/GBC")
         os.system(unmount_command)
     except Exception as e:
         print(e)

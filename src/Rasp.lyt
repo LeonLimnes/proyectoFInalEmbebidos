@@ -8,5 +8,6 @@ Joystick 1 {
 	Button 2: mouse 3
 	Button 5: key 64
 	Button 7: key 23
+	Button 11: key 9
 }
 

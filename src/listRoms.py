@@ -7,7 +7,7 @@ from tkinter import Text
 from tkinter.messagebox import showinfo
 
 def getRoms():
-    path = "/home/pi/Desktop/proyectoFInalEmbebidos/ROMS/GBC"
+    path = "../ROMS/GBC"
     dir_list = os.listdir(path)
     return dir_list
 
@@ -66,3 +66,4 @@ def guiListRoms():
     root.lift()
     root.attributes('-topmost',True)
     root.mainloop()
+guiListRoms()
