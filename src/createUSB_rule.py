@@ -14,7 +14,7 @@
 
 """Create the USB rules
 """
-data="""ACTION=="add", SUBSYSTEM="usb", RUN+="./on_usb_in.sh"
+data="""ACTION=="add", SUBSYSTEM="usb", RUN+="/home/pi/Desktop/proyectoFInalEmbebidos/src/on_usb_in.sh"
 """
 with open("/usr/lib/udev/rules.d/10-myDevice.rules", "w+") as file_rule:
     file_rule.write(data)
