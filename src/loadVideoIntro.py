@@ -100,7 +100,7 @@ disable_splash=1
 def cdmlineConfig():
     config = """console=serial0,115200 console=tty1 root=PARTUUID=2962f868-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles consoleblank=1 logo.nologo quiet loglevel=0 plymouth.enable=0 vt.global_cursor_default=0 plymouth.ignore-serial-consoles splash fastboot noatime nodiratime noram
 """
-    with open("//boot/cmdline.txt", "w+") as file_cdmConfig:
+    with open("/boot/cmdline.txt", "w+") as file_cdmConfig:
         file_cdmConfig.write(config)
 def loadVideo(fileDir):
     rcLocalConfig(fileDir)
