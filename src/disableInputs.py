@@ -1,4 +1,16 @@
 #!/usr/bin/sudo /usr/bin/python3
+# ## ###############################################
+#
+# disableInputs.py
+#
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#        Quiroz hernandez Rodolfo
+#        Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
 import os
 from time import sleep
 
