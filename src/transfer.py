@@ -1,3 +1,16 @@
+# ## ###############################################
+#
+# transfer.py
+#
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#
+#       Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
+
 from time import sleep
 import os
 import re
