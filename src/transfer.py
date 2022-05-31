@@ -34,9 +34,11 @@ for u in devices:
     columns = ['loc']+re.findall(r'\b(\w+)=',u)
     
     usbs.append(dict(zip(columns,loc)))
+
+path = "/media/usb"
+os.system("sudo mkdir {}".format(path))
 for u in usbs:
-    print ("Device {} is located at {} with UUID of {}".format(u["LABEL"],u["loc"],u["UUID"]))
-    path = "/media/usb"
+    print ("Device {} is located at {} with UUID of {}".format(u["LABEL"],u["loc"],u["UUID"])) 
     mount_command = "sudo mount -t {} {} {}".format(u["TYPE"].replace('"',""),u["loc"],path)
     unmount_command = "sudo unmount {}".format(path)
     try:
