@@ -1,4 +1,16 @@
 #!/usr/bin/sudo /usr/bin/python3
+# ## ###############################################
+#
+# loadVideoIntro.py
+# 
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#        Rodolfo Quiroz Hernandez 
+#        Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
 def rcLocalConfig(fileDir):
     config_rcLocal= """#!/bin/sh -e
 #

@@ -1,4 +1,19 @@
 #!/usr/bin/sudo /usr/bin/python3
+# ## ###############################################
+#
+# disable_desktop,py
+# 
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#        Rodolfo Quiroz Hernandez 
+#        Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
+
+"""Full screen
+"""
 import os
 
 pfile = '/etc/xdg/lxsession/LXDE-pi/autostart'

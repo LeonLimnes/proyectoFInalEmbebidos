@@ -1,7 +1,26 @@
+# ## ###############################################
+#
+# copyRoms.py
+# 
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#        Rodolfo Quiroz Hernandez 
+#        Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
 import os
 import shutil
 
 def copyFiles(sourceDir, destDir):
+    """copy roms, from sourceDir to distDir
+
+    Args:
+        sourceDir (String): source directory
+        destDir (_type_): destiny directory
+    """
+
     fileExt = ".gbc"
     ROMS = []
     for file in os.listdir(sourceDir):

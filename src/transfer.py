@@ -1,3 +1,20 @@
+# ## ###############################################
+#
+# transfer.py
+# 
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#        Rodolfo Quiroz Hernandez 
+#        Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
+
+"""Detect an usb and transfer roms if have
+
+"""
+
 from time import sleep
 import os
 import re

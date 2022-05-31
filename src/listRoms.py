@@ -1,4 +1,16 @@
 #!/usr/bin/env python3
+# ## ###############################################
+#
+# listRoms.py
+# 
+#
+# Autor: César Augusto Martínez Franco
+#        Lisset Noriega Domínguez
+#        Rodolfo Quiroz Hernandez 
+#        Jesús Arturo Vázquez Zaragoza
+# License: MIT
+#
+# ## ###############################################
 import os
 from time import sleep
 import tkinter as tk
@@ -7,13 +19,18 @@ from tkinter import Text
 from tkinter.messagebox import showinfo
 
 def getRoms():
+    """get roms from path
+
+    Returns:
+        listdir: list of roms in the path
+    """
     path = "../ROMS/GBC"
     dir_list = os.listdir(path)
     return dir_list
 
-
-# create the root window
 def guiListRoms():
+    """create and configure the window
+    """
     root = tk.Tk()
     root.resizable(False, False)
     root.title('Lista ROMS')
