@@ -11,7 +11,7 @@
 # License: MIT
 #
 # ## ###############################################
-"""Disable TouchPad, keyboard and mouse
+"""Disable keyboard and mouse
 """
 import os
 from time import sleep
@@ -31,6 +31,3 @@ with open(tmpFile,"r") as file:
     for id_device in idList:
         os.system("xinput disable {}".format(id_device))
     file.close()
-    #sleep(60)
-    #for id_device in idList:
-        #os.system("xinput enable {}".format(id_device))
